@@ -71,6 +71,28 @@ p {
   color: #ffc800;
 }
 
+.container-parallax {
+  height:300px;
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.appear-animation {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  transition-delay: 0.2s;
+}
+
+.appear-animation.appeared {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 header.masthead {
   padding-top: 10.5rem;

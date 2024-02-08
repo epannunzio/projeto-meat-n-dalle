@@ -30,6 +30,7 @@
                         <li class="nav-item"><a class="nav-link" href="#sobre">Sobre nós</a></li>
                         <li class="nav-item"><a class="nav-link" href="#cardapio">Cardápio</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#nossoTime">Trabalhe Conosco</a></li>
                     </ul>
                 </div>
             </div>
@@ -72,15 +73,14 @@
         </section>
 
         <section class="page-section bg-light" id="cardapio">
-            <div class="container">
+            <div class="container container-cardapio">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Cardápio</h2>
                     <h3 class="section-subheading text-muted">Conheça nossos queridinhos</h3>
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-sm-6 mb-4">
-
-                        <div class="portfolio-item">
+                        <div class="portfolio-item appear-animation">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
@@ -95,7 +95,7 @@
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4">
 
-                        <div class="portfolio-item">
+                        <div class="portfolio-item appear-animation">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
@@ -110,7 +110,7 @@
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4">
 
-                        <div class="portfolio-item">
+                        <div class="portfolio-item appear-animation">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
@@ -125,7 +125,7 @@
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
 
-                        <div class="portfolio-item">
+                        <div class="portfolio-item appear-animation">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
@@ -140,7 +140,7 @@
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
 
-                        <div class="portfolio-item">
+                        <div class="portfolio-item appear-animation">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
@@ -155,7 +155,7 @@
                     </div>
                     <div class="col-lg-4 col-sm-6">
 
-                        <div class="portfolio-item">
+                        <div class="portfolio-item appear-animation">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
@@ -173,29 +173,14 @@
         </section>
 
         <div class="py-5">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/logo-jbs.png" alt="..." aria-label="Microsoft Logo" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/padaria.png" alt="..." aria-label="Google Logo" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/femsa.png" alt="..." aria-label="Facebook Logo" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/frutas.png" alt="..." aria-label="IBM Logo" /></a>
-                    </div>
-                </div>
-            </div>
+            <div class="container container-parallax"></div>
         </div>
 
-        <section class="page-section" id="contato">
+        <section class="page-section" id="nossoTime">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Contato</h2>
-                    <h3 class="section-subheading text-muted">Entre em contato conosco</h3>
+                    <h2 class="section-heading text-uppercase">Trabalhe Conosco</h2>
+                    <h3 class="section-subheading text-muted">Quer fazer parte do nosso time?</h3>
                 </div>
 
                 <form id="contactForm" data-sb-form-api-token="API_TOKEN">
@@ -234,25 +219,34 @@
                 </form>
             </div>
         </section>
-        <!-- Footer-->
+
+        <section class="page-section" id="contato">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Contato</h2>
+                    <h3 class="section-subheading text-muted">Siga nossas redes sociais</h3>
+                </div>
+                <div class="text-center">
+                    <a class="btn btn-dark btn-social mx-2" href="https://wa.me/5511997190297" aria-label="Whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="https://meat-n-dalle.menuintegrado.com.br/" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/meatndallehamburgueria/" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </section>
+
         <footer class="footer py-4">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-4 text-lg-start">Todos os direitos reservados &copy; Meat N'Dalle 2023</div>
-                    <div class="col-lg-4 my-3 my-lg-0">
-                        <a class="btn btn-dark btn-social mx-2" href="https://wa.me/5511997190297" aria-label="Whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="https://meat-n-dalle.menuintegrado.com.br/" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/meatndallehamburgueria/" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
-                    </div>
+                <div class="row text-center">
+                    <div class="col-lg-4 text-lg-start">&copy; Meat N'Dalle 2024 - Design by <a class="text-decoration-none" href="https://www.instagram.com/onechance32/" target="_blank">EPannunzio</a></div>
+                   
                     <div class="col-lg-4 text-lg-end">
                         <a class="link-dark text-decoration-none me-3" href="https://meat-n-dalle.menuintegrado.com.br/" target="_blank">Peça seu delivery aqui!</a>
-                        <a class="link-dark text-decoration-none me-3" href="https://pedidososasco.sunice.com.br/" target="_blank">E a sobremesa? Peça aqui!</a>
+                        <a class="text-decoration-none me-3" href="https://pedidososasco.sunice.com.br/" target="_blank" style="color: purple; font-weight: bold;">E a sobremesa? Peça aqui!</a>
                     </div>
                 </div>
             </div>
         </footer>
-        <!-- Portfolio Modals-->
-        <!-- Portfolio item 1 modal popup-->
+
         <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -261,7 +255,6 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
-                                    <!-- Project details-->
                                     <h2 class="text-uppercase">Catupiry Monster</h2>
                                     
                                     <img class="img-fluid d-block mx-auto" src="assets/img/cardapio/lanche1.png" alt="..." />
@@ -278,7 +271,7 @@
                 </div>
             </div>
         </div>
-        <!-- Portfolio item 2 modal popup-->
+
         <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -287,7 +280,6 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
-                                    <!-- Project details-->
                                     <h2 class="text-uppercase">Exemplo</h2>
                                     <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/cardapio/lanche2.png" alt="..." />
@@ -304,7 +296,7 @@
                 </div>
             </div>
         </div>
-        <!-- Portfolio item 3 modal popup-->
+
         <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -313,7 +305,6 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
-                                    <!-- Project details-->
                                     <h2 class="text-uppercase">Exemplo</h2>
                                     <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/cardapio/lanche3.png" alt="..." />
@@ -330,7 +321,7 @@
                 </div>
             </div>
         </div>
-        <!-- Portfolio item 4 modal popup-->
+
         <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -339,7 +330,6 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
-                                    <!-- Project details-->
                                     <h2 class="text-uppercase">Exemplo</h2>
                                     <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/cardapio/lanche4.png" alt="..." />
@@ -356,7 +346,7 @@
                 </div>
             </div>
         </div>
-        <!-- Portfolio item 5 modal popup-->
+
         <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -365,7 +355,6 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
-                                    <!-- Project details-->
                                     <h2 class="text-uppercase">Exemplo</h2>
                                     <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/cardapio/lanche5.png" alt="..." />
@@ -382,7 +371,7 @@
                 </div>
             </div>
         </div>
-        <!-- Portfolio item 6 modal popup-->
+
         <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -391,7 +380,6 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
-                                    <!-- Project details-->
                                     <h2 class="text-uppercase">Exemplo</h2>
                                     <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/cardapio/lanche6.png" alt="..." />
@@ -408,14 +396,10 @@
                 </div>
             </div>
         </div>
-        <!-- Bootstrap core JS-->
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>                 
     </body>
 </html>
+

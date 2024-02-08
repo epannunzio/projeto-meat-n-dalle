@@ -1,12 +1,3 @@
-/*!
-* Start Bootstrap - Agency v7.0.12 (https://startbootstrap.com/theme/agency)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE)
-*/
-//
-// Scripts
-// 
-
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function
@@ -23,13 +14,10 @@ window.addEventListener('DOMContentLoaded', event => {
 
     };
 
-    // Shrink the navbar 
     navbarShrink();
 
-    // Shrink the navbar when page is scrolled
     document.addEventListener('scroll', navbarShrink);
 
-    //  Activate Bootstrap scrollspy on the main nav element
     const mainNav = document.body.querySelector('#mainNav');
     if (mainNav) {
         new bootstrap.ScrollSpy(document.body, {
@@ -38,7 +26,6 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     };
 
-    // Collapse responsive navbar when toggler is visible
     const navbarToggler = document.body.querySelector('.navbar-toggler');
     const responsiveNavItems = [].slice.call(
         document.querySelectorAll('#navbarResponsive .nav-link')
@@ -52,3 +39,40 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    var parallaxElements = document.querySelectorAll('.py-5');
+
+    parallaxElements.forEach(function(element) {
+        element.style.backgroundImage = 'url("assets/img/logos/meatndalle.png")'; 
+        element.classList.add('parallax');
+    });
+});
+
+
+    document.addEventListener("DOMContentLoaded", function() {
+        var portfolioItems = document.querySelectorAll('.appear-animation');
+
+        function isElementInViewport(el) {
+            var rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        function handleScroll() {
+            portfolioItems.forEach(function(item) {
+                if (isElementInViewport(item) && !item.classList.contains('appeared')) {
+                    item.classList.add('appeared');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', handleScroll);
+
+        handleScroll(); 
+    });
+
